@@ -1,6 +1,8 @@
 const mongoose=require("mongoose");
 require("dotenv").config();
-const url=`mongodb+srv://${process.env.user}:${process.env.pass}@cluster0.tnbldtj.mongodb.net/?retryWrites=true&w=majority`;
+console.log(process.env.USER);
+console.log(process.env.PASS);
+const url=`mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.tnbldtj.mongodb.net/?retryWrites=true&w=majority`;
 
 module.exports.connect = () => {
     mongoose
