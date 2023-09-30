@@ -16,6 +16,6 @@ app.get("/",(req,res)=>{
 })
 app.use("/api",jsonParser,router);
 db.connect();
-app.listen(process.env.PORT||8000,()=>{
+app.listen(8000,()=>{
     console.log("listening on port"+ process.env.PORT);
 })

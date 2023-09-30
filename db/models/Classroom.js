@@ -6,6 +6,7 @@ const ClassroomSchema=new mongoose.Schema({
     Contact:String,
     Price:Number,
     Image:String,
+    Video:String,
     ParticipantStudent:[{type:mongoose.Schema.Types.ObjectId,ref:"StudentSchema",default:undefined}],
     Organization:{type:mongoose.Schema.Types.ObjectId,ref:"OrganizationSchema"},
     OrgWallet:String

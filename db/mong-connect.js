@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 require("dotenv").config();
 console.log(process.env.USER);
 console.log(process.env.PASS);
-const url=`mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.tnbldtj.mongodb.net/?retryWrites=true&w=majority`;
+const url=`mongodb+srv://amit:amit@cluster0.tnbldtj.mongodb.net/?retryWrites=true&w=majority`;
 
 module.exports.connect = () => {
     mongoose

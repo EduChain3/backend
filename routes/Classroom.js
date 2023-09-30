@@ -27,6 +27,7 @@ router.post("/create",async(req,res)=>{
             Contact:req.body.Contact,
             Price:req.body.Price,
             JoinCode:counter,
+            Video:req.body.Video,
             Organization:orgid,
             Image:req.body.Image,
             OrgWallet:req.body.Wallet
